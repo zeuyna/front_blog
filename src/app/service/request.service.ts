@@ -23,4 +23,9 @@ export class RequestService {
   getImage(path: string) {
     return this.file.ref(path).getDownloadURL();
   }
+
+  getItemWhere(collection: string, key: string, value: string) {
+    let data = this.firestore.collection(collection, ref => ref.where(key, "==", value)).snapshotChanges();
+    return data;
+  }
 }

@@ -13,7 +13,13 @@ const routes: Routes = [
   },
   {
     path: 'tutos',
-    component: TutosComponent
+    component: TutosComponent,
+    children: [
+      {
+        path: 'tutos/:category',
+        component: TutosComponent
+      }
+    ]
   },
   {
     path: 'tutos/:tuto',

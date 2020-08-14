@@ -1,3 +1,10 @@
+<div class="container" *ngIf="category">
+  <select id="category" class="p-2" (change)="onChange()" [(ngModel)]="selected">
+    <option value="Catégories" disabled selected>Catégories</option>
+    <option value="all">Tout</option>
+    <option *ngFor="let item of categories" [ngValue]="item.wording">{{item.wording}}</option>
+  </select>
+</div>
 <div class="d-flex justify-content-around flex-wrap m-5">
   <div class="card m-2 mt-5 mb-5" *ngFor="let item of article" [routerLink]="['/tutos', item.name]">
     <div class="card-image" [ngStyle]="{'background-image': 'url(' + item.img + ')'}"></div>
