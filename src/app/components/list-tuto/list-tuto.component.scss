@@ -1,0 +1,23 @@
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text";
+  cursor: pointer;
+  border: none;
+
+  border-radius: 18px;
+  background: white;
+  font-family: roboto;
+  transition: 0.4s all;
+
+  .card-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+}
+.card:hover {
+  box-shadow: 0px 2px 3px rgba(26, 25, 25, 0.404);
+}

@@ -2,12 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Front</title>
+  <title>Abdoul Aziz Dione</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <!-- LOAD JQUERY LIBRARY -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <!-- LOADING FONTS AND ICONS -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans%3A800" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.css">
+  <!-- REVOLUTION STYLE SHEETS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
+  <!-- REVOLUTION LAYERS STYLES -->
+  <link rel="stylesheet" type="text/css" href="assets/css/layers.css">
+  <!-- REVOLUTION NAVIGATION STYLES -->
+  <link rel="stylesheet" type="text/css" href="assets/css/navigation.css">
+  <!-- FONT AND STYLE FOR BASIC DOCUMENTS, NO NEED FOR FURTHER USAGE IN YOUR PROJECTS-->
+  <link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" type="text/css" href="assets/css/noneed.css">
+  <!-- REVOLUTION JS FILES -->
+  <script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+  <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+  <script type="text/javascript" src="assets/js/revolution.extension.actions.min.js"></script>
+  <script type="text/javascript" src="assets/js/revolution.extension.carousel.min.js"></script>
+  <script type="text/javascript" src="assets/js/revolution.extension.kenburn.min.js"></script>
+  <script type="text/javascript" src="assets/js/revolution.extension.layeranimation.min.js"></script>
+  <script type="text/javascript" src="assets/js/revolution.extension.migration.min.js"></script>
+  <script type="text/javascript" src="assets/js/revolution.extension.navigation.min.js"></script>
+  <script type="text/javascript" src="assets/js/revolution.extension.parallax.min.js"></script>
+  <script type="text/javascript" src="assets/js/revolution.extension.slideanims.min.js"></script>
+  <script type="text/javascript" src="assets/js/revolution.extension.video.min.js"></script>
 </head>
-<body>
+<body id="dark">
   <app-root></app-root>
+  <div class="clearfix"></div>
+  <script type="text/javascript">
+    var tpj=jQuery;
+    var revapi484;
+    tpj(document).ready(function() {
+    if(tpj("#rev_slider_484_1").revolution == undefined){
+        revslider_showDoubleJqueryError("#rev_slider_484_1");
+    }else{
+        revapi484 = tpj("#rev_slider_484_1").show().revolution({
+            sliderType:"standard",
+            jsFileLocation:"revolution/js/",
+            sliderLayout:"fullscreen",
+            dottedOverlay:"none",
+            delay:9000,
+            navigation: {
+                keyboardNavigation:"off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation:"off",
+                mouseScrollReverse:"default",
+                onHoverStop:"off",
+                touch:{
+                    touchenabled:"on",
+                    swipe_threshold: 75,
+                    swipe_min_touches: 1,
+                    swipe_direction: "horizontal",
+                    drag_block_vertical: false
+                }
+            },
+            responsiveLevels:[1240,1024,778,480],
+            visibilityLevels:[1240,1024,778,480],
+            gridwidth:[1240,1024,778,480],
+            gridheight:[900,768,960,720],
+            lazyType:"single",
+            parallax: {
+                type:"mouse",
+                origo:"slidercenter",
+                speed:300,
+                levels:[2,4,6,8,10,12,14,16,18,20,22,24,49,50,51,55],
+                type:"mouse",
+            },
+            shadow:0,
+            spinner:"spinner2",
+            stopLoop:"on",
+            stopAfterLoops:0,
+            stopAtSlide:1,
+            shuffle:"off",
+            autoHeight:"off",
+            fullScreenAutoWidth:"off",
+            fullScreenAlignForce:"off",
+            fullScreenOffsetContainer: "",
+            fullScreenOffset: "",
+            disableProgressBar:"on",
+            hideThumbsOnMobile:"off",
+            hideSliderAtLimit:0,
+            hideCaptionAtLimit:0,
+            hideAllCaptionAtLilmit:0,
+            debugMode:false,
+            fallbacks: {
+                simplifyAll:"off",
+                nextSlideOnWindowFocus:"off",
+                disableFocusListener:false,
+            }
+        });
+    }
+  }); /*ready*/
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </body>
 </html>

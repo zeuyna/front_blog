@@ -1,0 +1,17 @@
+.course {
+  width: 350px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  .image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+  }
+  transition: 0.4s all;
+}
+.course:hover {
+  box-shadow: 0px 2px 3px rgba(26, 25, 25, 0.404);
+}

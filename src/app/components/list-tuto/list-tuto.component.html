@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-around flex-wrap m-5">
+  <div class="card m-2 mt-5 mb-5" *ngFor="let item of article" [routerLink]="['/tutos', item.name]">
+    <div class="card-image" [ngStyle]="{'background-image': 'url(' + item.img + ')'}"></div>
+    <div class="card-text p-3">
+      <span class="date">{{item.date | date}}</span>
+      <h2 class="mt-2 mb-2">{{item.name}}</h2>
+      <p>{{item.description}}</p>
+    </div>
+  </div>
+</div>

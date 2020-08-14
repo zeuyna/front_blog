@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-around flex-wrap mb-5">
+  <div class="mt-5 mb-5 course text-center m-3" *ngFor="let item of tds">
+    <div class="image" [ngStyle]="{'background-image': 'url(' + item.img + ')'}"></div>
+    <h2 class="p-3">{{item.wording}}</h2>
+  </div>
+</div>
