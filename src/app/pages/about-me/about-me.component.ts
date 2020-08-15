@@ -1,10 +1,9 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
 
