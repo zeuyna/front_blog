@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TdComponent } from './pages/td/td.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { TutoComponent } from './pages/tuto/tuto.component';
+import { ShareSocialNetworkComponent } from './components/share-social-network/share-social-network.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TutoComponent } from './pages/tuto/tuto.component';
     FooterComponent,
     TdComponent,
     AboutMeComponent,
-    TutoComponent
+    TutoComponent,
+    ShareSocialNetworkComponent
   ],
   imports: [
     BrowserModule,
