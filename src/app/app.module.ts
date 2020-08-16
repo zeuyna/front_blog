@@ -18,6 +18,7 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { TutoComponent } from './pages/tuto/tuto.component';
 import { ShareSocialNetworkComponent } from './components/share-social-network/share-social-network.component';
 import { HeaderComponent } from './components/header/header.component';
+import { DisqusModule } from "ngx-disqus";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HeaderComponent } from './components/header/header.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    DisqusModule.forRoot('/abdoul-aziz-dione-3')
   ],
   providers: [],
   bootstrap: [AppComponent]

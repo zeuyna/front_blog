@@ -6,6 +6,9 @@
     <div class="mt-5 content">
       <div [innerHTML]="article.content"></div>
     </div>
+    <div class="mt-5">
+      <disqus [identifier]="pageId"></disqus>
+    </div>
   </div>
   <app-share-social-network></app-share-social-network>
 </div>

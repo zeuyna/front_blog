@@ -13,6 +13,7 @@ export class TutoComponent implements OnInit {
 
   nameofarticle: string;
   article: Article;
+  pageId: string;
 
   constructor(private request: RequestService, private route: ActivatedRoute) { }
 
@@ -41,7 +42,7 @@ export class TutoComponent implements OnInit {
               }
             )
             this.article.date = new Date(1000 * this.article.date)
-            console.log(this.article)
+            this.pageId = this.article.name
           }
         )
       }

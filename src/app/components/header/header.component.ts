@@ -15,6 +15,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe((event: any) => {
+      if (event.url == '/') {
+        this.title = ''
+      }
       if (event.url == '/tutos') {
         this.title = 'Tutoriels'
       }
