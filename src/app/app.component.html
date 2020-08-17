@@ -7,16 +7,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
         <li class="nav-item mr-4">
-          <a routerLink="/" class="nav-link">Accueil</a>
+          <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
         </li>
         <li class="nav-item mr-4">
-          <a routerLink="/tutos" class="nav-link">Tutoriels</a>
+          <a routerLink="/tutos" class="nav-link" routerLinkActive="active">Tutoriels</a>
         </li>
         <li class="nav-item mr-4">
-          <a routerLink="/td" class="nav-link">Travaux dirigés</a>
+          <a routerLink="/subjects" class="nav-link" routerLinkActive="active">Travaux dirigés</a>
         </li>
         <li class="nav-item mr-4">
-          <a href="/about" class="nav-link">A propos de moi</a>
+          <a href="/about" class="nav-link" routerLinkActive="active">A propos de moi</a>
         </li>
       </ul>
     </div>

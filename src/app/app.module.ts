@@ -19,6 +19,10 @@ import { TutoComponent } from './pages/tuto/tuto.component';
 import { ShareSocialNetworkComponent } from './components/share-social-network/share-social-network.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DisqusModule } from "ngx-disqus";
+import { MatieresComponent } from './pages/matieres/matieres.component';
+import { MatiereComponent } from './pages/matiere/matiere.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,9 @@ import { DisqusModule } from "ngx-disqus";
     AboutMeComponent,
     TutoComponent,
     ShareSocialNetworkComponent,
-    HeaderComponent
+    HeaderComponent,
+    MatieresComponent,
+    MatiereComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +47,9 @@ import { DisqusModule } from "ngx-disqus";
     FormsModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    DisqusModule.forRoot('/abdoul-aziz-dione-3')
+    DisqusModule.forRoot('/abdoul-aziz-dione-3'),
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

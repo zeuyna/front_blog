@@ -1,0 +1,23 @@
+<div class="container d-flex flex-wrap">
+  <div class="tds d-flex flex-column">
+    <div class="mt-5" *ngFor="let item of tdByLevel">
+      <h2>{{item.level}}</h2>
+      <hr class="mt-3 mb-3">
+      <div class="d-flex flex-wrap">
+        <div class="td d-flex flex-column align-items-center m-4" *ngFor="let tdName of item.td" [routerLink]="['/td', tdName]">
+          <img src="../../../assets/img/notebook.svg" alt="">
+          <h2>
+            <a>{{tdName}}</a>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="category p-4">
+    <ul class="list-unstyled">
+      <li class="m-4" *ngFor="let item of matieres">
+        <a [routerLink]="['/subjects', item.wording]" [ngStyle]="{'color': item.color}">{{item.wording}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

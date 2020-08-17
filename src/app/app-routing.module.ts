@@ -5,6 +5,8 @@ import { TutosComponent } from './pages/tutos/tutos.component';
 import { TdComponent } from './pages/td/td.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { TutoComponent } from './pages/tuto/tuto.component';
+import { MatiereComponent } from './pages/matiere/matiere.component';
+import { MatieresComponent } from './pages/matieres/matieres.component';
 
 const routes: Routes = [
   {
@@ -26,7 +28,15 @@ const routes: Routes = [
     component: TutoComponent
   },
   {
-    path: 'td',
+    path: 'subjects',
+    component: MatieresComponent
+  },
+  {
+    path: 'subjects/:matiere',
+    component: MatiereComponent
+  },
+  {
+    path: 'td/:td',
     component: TdComponent
   },
   {

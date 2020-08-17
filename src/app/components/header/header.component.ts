@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
       if (event.url == '/tutos') {
         this.title = 'Tutoriels'
       }
-      else if (event.url == '/td') {
+      else if (event.url == '/subjects') {
         this.title = 'Travaux dirigés'
       }
     });

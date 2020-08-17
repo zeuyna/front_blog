@@ -5,3 +5,6 @@ nav.navbar-expand-lg {
   top: 0;
   z-index: 999;
 }
+.nav-item a.active {
+  color: #1565C0 !important;
+}

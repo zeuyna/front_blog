@@ -1,3 +1,13 @@
-<app-list-matiere></app-list-matiere>
-
-<app-list-tuto nbrElement="3"></app-list-tuto>
+<div class="container">
+  <h1>{{td.name}}</h1>
+  <mat-tab-group class="mt-5">
+    <mat-tab label="Énnoncé">
+      <div [innerHTML]="td.content"></div>
+    </mat-tab>
+    <mat-tab label="Corriger"> Content 2 </mat-tab>
+  </mat-tab-group>
+  <div class="mt-5">
+    <disqus [identifier]="pageId"></disqus>
+  </div>
+  <app-share-social-network></app-share-social-network>
+</div>

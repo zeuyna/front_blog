@@ -1,0 +1,32 @@
+hr {
+  border-top: 1px solid rgb(43, 41, 41);
+  width: 100%;
+}
+.tds {
+  width: 75%;
+}
+.td {
+  width: 130px;
+  img {
+    width: 80px;
+    opacity: 0.5;
+    transition: 0.4s all;
+  }
+  h2 {
+    font-size: 1.6em;
+    text-align: center;
+    transition: 0.4s all;
+  }
+}
+.td:hover {
+  img {
+    opacity: 1;
+  }
+  h2 {
+    color: #1565C0
+  }
+}
+.category {
+  border-radius: 5px;
+  background-color: rgb(252, 252, 252);
+}
